@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Escuela de Formación de Futbol</title>
+  <link rel="stylesheet" href="stylojudo.css">
+</head>
+<body>
+  <header>
+    <h1>Escuela de Formación de Futbol</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#programas">Programas</a></li>
+        <li><a href="mailto:payaresh@hotmail.com">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="sobre-nosotros">
+      <h2>Sobre Nosotros</h2>
+      <p>Bienvenido a la Escuela de Formación de Futbol, donde entrenamos a los futuros campeones con dedicación y excelencia.</p>
+      <img src="./futbol.png" alt="style="width: 50px; height: auto; border: 2px solid black;>
+    </section>
+
+    <section id="programas">
+      <h2>Programas de Entrenamiento</h2>
+      <article>
+        <h3>Iniciación</h3>
+        <img src="./futbolprincipiantes.jfif" alt="Programa de Iniciación">
+        <p>Programa diseñado para niños principiantes, niños que apenas inician en el deporte considerado el mejor espectaculo del mundo y que aun no tienen conocimientos de este bello arte marcial.</p>
+      </article>
+      <article>
+        <h3>Intermedio</h3>
+        <img src="./futbolintetmedio.jfif" alt="Programa Intermedio">
+        <p>Para judokas con experiencia básica, niños que ya han experimentado las tecnicas escenciales en futbol y han cambiado de escuela por cualquier motivo, y quieren seguir entrenando.</p>
+      </article>
+      <article>
+        <h3>Avanzado</h3>
+        <img src="./futbolavanzados).jfif" alt="Programa Avanzado">
+        <p>Entrenamiento para competidores avanzados, entrenamiento para niños con mas de dos años entrenando futbol y competiendo que quieren seguir cosechando triunfos y medallas.</p>
+      </article>
+    </section>
+
+    <section id="inscripcion">
+      <h2>Formulario de Inscripción</h2>
+      <form action="/submit" method="post">
+        <fieldset>
+          <legend>Información Personal</legend>
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required>
+          <label for="email">Correo Electrónico:</label>
+          <input type="email" id="email" name="email" required>
+          <label for="telefono">Teléfono:</label>
+          <input type="tel" id="telefono" name="telefono" required>
+        </fieldset>
+
+        <fieldset>
+          <legend>Programa de Interés</legend>
+          <label for="programa">Programa:</label>
+          <select id="programa" name="programa" required>
+            <option value="">Seleccione un programa</option>
+            <option value="iniciacion">Iniciación</option>
+            <option value="intermedio">Intermedio</option>
+            
+          </select>
+        </fieldset>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Escuela de Formación de Futbol</p>
+  </footer>
+</body>
+</html>
