@@ -1,0 +1,15 @@
+/* Definir la animación de parpadeo */
+@keyframes parpadeo {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+/* Aplicar la animación a la clase .parpadeante */
+.parpadeante {
+    animation: parpadeo 1s infinite;
+    color: red; /* Color del texto */
+}
